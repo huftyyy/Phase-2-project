@@ -32,7 +32,7 @@ The following visualizations support the recommendations and are included in the
 1. **Bar Plot of Average Total Gross by Genre**  
    - **Description**: This bar plot shows the average box office revenue (`total_gross`) for each movie genre. Adventure, Action, and Sci-Fi genres stand out, consistently earning over $200 million on average, indicating their strong appeal to audiences.  
    - **Visualization**:  
-     ![Bar Plot of Average Total Gross by Genre]([images/genre_gross_barplot.png](https://github.com/huftyyy/Phase-2-project/blob/main/genre_gross_barplot.png))  
+     ![Bar Plot of Average Total Gross by Genre](images/genre_gross_barplot.png)  
    - **Insight**: Producing films in Adventure, Action, and Sci-Fi genres can maximize ticket sales due to their proven commercial success.
 
 2. **Scatter Plot of Total Gross vs. Average Rating**  
