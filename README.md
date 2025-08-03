@@ -15,15 +15,7 @@ These insights will help the studio make data-driven decisions to compete in the
 
 ## Data Understanding and Analysis
 
-### Source of Data
-The Data
-In the folder zippedData are movie datasets from:
-
-Box Office MojoLinks to an external site.
-IMDBLinks to an external site.
-Rotten TomatoesLinks to an external site.
-TheMovieDBLinks to an external site.
-The NumbersLinks to an external site.
+### Source of Data.
 - **Box Office Mojo**: Provides financial data, including domestic and foreign gross revenue, for approximately 3,387 movies from 2010–2018.
 - **IMDB**: Supplies movie characteristics, such as genres, average audience ratings, and runtime, for approximately 146,144 movies, filtered to include only those with reliable ratings (more than 100 votes).
 - **Merged Dataset**: Combines both sources, resulting in 1,000–2,000 movies with complete financial and characteristic data after cleaning.
