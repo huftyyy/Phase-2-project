@@ -1,7 +1,7 @@
 # Movie Studio Analysis
 
 ## Overview
-This project analyzes movie data to guide a new movie studio in producing films that maximize box office revenue. By examining historical data on movie genres, audience ratings, and runtimes, we identify key trends and provide actionable recommendations to inform production decisions. The analysis uses Python and Pandas (a tool for organizing and analyzing data) for data processing and visualization, with findings presented in a Jupyter Notebook (`movie_analysis.ipynb`) and a slide deck (`presentation.pdf`).
+This project analyzes movie data to guide a new movie studio in producing films that maximize box office revenue. By examining historical data on movie genres, audience ratings, and runtimes, we identify key trends and provide actionable recommendations to inform production decisions. The analysis uses Python and Pandas (a tool for organizing and analyzing data) for data processing and visualization, with findings presented in a Jupyter Notebook (`movie_analysis.ipynb`), a slide deck (`presentation.pdf`), and an interactive Tableau dashboard (`movie_dashboard.twbx`).
 
 ## Business Understanding
 **Stakeholder**: A new movie studio aiming to produce commercially successful films.  
@@ -15,19 +15,19 @@ These insights will help the studio make data-driven decisions to compete in the
 
 ## Data Understanding and Analysis
 
-### Source of Data.
+### Source of Data
 - **Box Office Mojo**: Provides financial data, including domestic and foreign gross revenue, for approximately 3,387 movies from 2010–2018.
 - **IMDB**: Supplies movie characteristics, such as genres, average audience ratings, and runtime, for approximately 146,144 movies, filtered to include only those with reliable ratings (more than 100 votes).
 - **Merged Dataset**: Combines both sources, resulting in 1,000–2,000 movies with complete financial and characteristic data after cleaning.
 
 ### Description of Data
 The merged dataset (`merged_df`) includes:
-- **Columns**: `title`, `domestic_gross`, `foreign_gross`, `total_gross`, `genres`, `average_rating`, `runtime_minutes`, `year`.
+- **Columns**: `title`, `domestic_gross`, `foreign_gross`, `total_gross`, `genres`, `average_rating`, `runtime_minutes`, `year`, `studio`.
 - **Data Cleaning**: Missing values were filled (e.g., `genres` with "Unknown", `domestic_gross` with median), titles were standardized for merging, duplicates were removed, and data types were corrected (e.g., `foreign_gross` to float64).
-- **Analysis Tools**: Python with Pandas for data manipulation, Matplotlib for creating visualizations, and SQLite for querying IMDB data.
+- **Analysis Tools**: Python with Pandas for data manipulation, Matplotlib for creating visualizations, SQLite for querying IMDB data, and Tableau for interactive dashboards.
 
 ### Visualizations
-The following visualizations support the recommendations and are included in the Jupyter Notebook (`movie_analysis.ipynb`) and slide deck (`presentation.pdf`). They are displayed below to illustrate key findings:
+The following visualizations support the recommendations and are included in the Jupyter Notebook (`movie_analysis.ipynb`), slide deck (`presentation.pdf`), and Tableau dashboard (`movie_dashboard.twbx`). They are displayed below to illustrate key findings:
 
 1. **Bar Plot of Average Total Gross by Genre**  
    - **Description**: This bar plot shows the average box office revenue (`total_gross`) for each movie genre. Adventure, Action, and Sci-Fi genres stand out, consistently earning over $200 million on average, indicating their strong appeal to audiences.  
@@ -55,6 +55,17 @@ The following visualizations support the recommendations and are included in the
    - **Visualization**:  
      ![Bar Plot of Average Total Gross by Runtime Category](images/runtime_gross_barplot.png)  
    - **Insight**: Targeting a runtime of 120–150 minutes balances engaging storytelling with audience preferences for high-grossing films.
+
+## Dashboard
+An interactive Tableau dashboard (`movie_dashboard.twbx`) visualizes the analysis results, allowing stakeholders to explore trends in genres, ratings, and runtimes. Open the dashboard in Tableau Desktop or view it on Tableau Public: [Insert Tableau Public URL here]. To run locally:
+1. Install Tableau Desktop or Tableau Public (free at https://www.tableau.com/products/public).
+2. Open `movie_dashboard.twbx`.
+3. Interact with the genre dropdown and rating slider to explore data.
+
+The dashboard includes:
+- A bar plot of average revenue by genre with a genre filter.
+- A scatter plot of revenue vs. rating with a rating range slider.
+- A bar plot of average revenue by runtime category.
 
 ## Conclusion
 The analysis provides three key findings to guide the studio’s production strategy:
