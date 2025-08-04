@@ -57,7 +57,7 @@ The following visualizations support the recommendations and are included in the
    - **Insight**: Targeting a runtime of 120–150 minutes balances engaging storytelling with audience preferences for high-grossing films.
 
 ## Dashboard
-An interactive Tableau dashboard (`movie_dashboard.twbx`) visualizes the analysis results, allowing stakeholders to explore trends in genres, ratings, and runtimes. Open the dashboard in Tableau Desktop or view it on Tableau Public: [Insert Tableau Public URL here]. To run locally:
+An interactive Tableau dashboard(https://public.tableau.com/app/profile/hudheyfa.mohamud/viz/movie_dashboard_17543455345820/MovieStudioAnalysis)  visualizes the analysis results, allowing stakeholders to explore trends in genres, ratings, and runtimes. Open the dashboard in Tableau Desktop or view it on Tableau Public: [Insert Tableau Public URL here]. To run locally:
 1. Install Tableau Desktop or Tableau Public (free at https://www.tableau.com/products/public).
 2. Open `movie_dashboard.twbx`.
 3. Interact with the genre dropdown and rating slider to explore data.
